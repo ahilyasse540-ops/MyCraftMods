@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCraftMods - Best Minecraft Mods Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/enderpearl.png" type="image/png">
+    <style>
+        @font-face {
+            font-family: "PixelAE-Regular";
+            src: url("./fonts/PixelAE-Regular.ttf");
+        }
+
+        *{
+            font-family: "PixelAE-Regular";
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ecf0f1;
+        }
+        .mod-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mod-card .p-4 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.mod-card a {
+  margin-top: auto; /* pushes button to bottom */
+  text-align: center;
+}
+
+        .mod-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .download-btn:hover {
+            background-color: #27ae60;
+        }
+        .nav-link:hover {
+            color: #2ecc71;
+        }
+        .search-btn:hover {
+            background-color: #27ae60;
+        }
+        input::placeholder{
+            text-align: right;
+        }
+        .searchIcon{
+            background-color: #27ae60;
+            padding: 10px;
+            width: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+              <a href="index.html">  <h1 class="text-2xl font-bold text-green-400">MyCraftMods</h1></a>
+            </div>
+           <!-- Mobile Nav (from right) -->
+           <!--  <nav id="mobileNav" class="fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-300 z-50">
+            <ul class="p-6 space-y-6 text-right">
+                <li><a href="#" class="block hover:text-green-400"></a></li>
+                <li><a href="#footer" class="block hover:text-green-400">Contact</a></li>
+                <li><a href="#" class="block hover:text-green-400">About</a></li>
+            </ul>
+            </nav>
+           <button id="burgerBtn" class=" text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                 </svg>
+            </button> -->
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <!-- Search Bar -->
+        <div class="max-w-2xl mx-auto mb-12">
+            <div class="relative">
+                <input dir="rtl" type="text" id="searchInput" placeholder="بحث عن المود" class="w-full px-6 py-3 rounded-full border-2 border-gray-300 focus:outline-none focus:border-green-500">          
+            </div>
+        </div>
+
+        <!-- Latest Mods Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-right">: اكتشف المودات</h2>
+            <div  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Mod Card 1 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="images/الصورة المصغة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3  class="title text-xl font-semibold text-gray-800 mb-2">مود المصانع</h3>
+                        <p class="text-gray-600 mb-4">مود المصانع يضيف آلات وأنظمة إنتاج تلقائية، لتحويل الموارد إلى منتجات بكفاءة عالية.</p>
+                        <a href="pages/mod1.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Mod Card 2 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة المصغرة.webp" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود الطاقة</h3>
+                        <p class="text-gray-600 mb-4">مود الطاقة يضيف مصادر متنوعة لتوليد الكهرباء، مثل المحركات والمولدات، لتشغيل الآلات والأنظمة الصناعية بكفاءة واستدامة.</p>
+                        <a href="pages/mod2.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Mod Card 3 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/صورة 3المصغرة.png" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود الرتب</h3>
+                        <p class="text-gray-600 mb-4">مود الرتب يضيف نظام تصنيفات للاعبين، يمنحهم صلاحيات وامتيازات مختلفة حسب رتبتهم داخل السيرفر أو العالم.</p>
+                        <a href="pages/mod3.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Mod Card 4 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة  4الصغيرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مودباك بتر ماين كرافت</h3>
+                        <p class="text-gray-600 mb-4">مود Better Minecraft يضيف محتوى جديد يطوّر تجربة اللعب ويزيد تنوع العالم.</p>
+                        <a href="pages/mod4.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Mod Card 5 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة  5المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود البايومات</h3>
+                        <p class="text-gray-600 mb-4">مود البايومات يضيف بيئات جديدة تزيد تنوع العالم واستكشافه.</p>
+                        <a href="pages/mod5.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Mod Card 6 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة  6المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3  class="title text-xl font-semibold text-gray-800 mb-2">مود الحقائب</h3>
+                        <p class="text-gray-600 mb-4">مود الحقائب يضيف حقائب تخزين محمولة، تساعد اللاعبين على تنظيم وحمل المزيد من الموارد أثناء التنقل.</p>
+                        <a href="pages/mod6.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Mod Card 7 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة  7المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3  class="title text-xl font-semibold text-gray-800 mb-2">مود الزعماء</h3>
+                        <p class="text-gray-600 mb-4">مود الزعماء يضيف وحوش قوية ومعارك ملحمية، تمنح اللاعبين تحديات فريدة وغنائم نادرة بعد الانتصار.</p>
+                        <a href="pages/mod7.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Mod Card 8 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 8المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود آلات الردستون</h3>
+                        <p class="text-gray-600 mb-4">مود آلات الردستون يضيف أجهزة متقدمة لتسهيل البرمجة والتحكم، مما يوسع إمكانيات التفاعل والتصميم داخل اللعبة.</p>
+                        <a href="pages/mod8.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Mod Card 9 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 9المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مودباك داون كرافت</h3>
+                        <p class="text-gray-600 mb-4">مودباك DawnCraft يحوّل ماين كرافت إلى لعبة مغامرات خيالية، بإضافة وحوش خارقة، مهام، وقصة غنية، ليمنح اللاعبين تجربة RPG مليئة بالتحديات والتشويق.</p>
+                        <a href="pages/mod9.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                 <!-- Mod Card 10-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/10صورة مصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود طاولة نزع التطويرات</h3>
+                        <p class="text-gray-600 mb-4">مود طاولة نزع التطويرات يتيح إزالة التعزيزات من الأدوات والأسلحة، مما يمنح اللاعبين حرية إعادة استخدامها أو إعادة تطويرها حسب الحاجة.</p>
+                        <a href="pages/mod10.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                 <!-- Mod Card 11-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 11المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود السحر</h3>
+                        <p class="text-gray-600 mb-4">مود السحر يضيف تعاويذ وعصي سحرية، تتيح للاعبين استخدام قوى خارقة مثل النار والجليد والبرق، مما يحوّل القتال والاستكشاف إلى تجربة خيالية مذهلة.</p>
+                        <a href="pages/mod11.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                  <!-- Mod Card 12-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 12المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود العصور الوسطى</h3>
+                        <p class="text-gray-600 mb-4">مود العصور الوسطى يضيف قلاع وأسلحة قديمة ليمنح اللعبة طابعاً تاريخياً.</p>
+                        <a href="pages/mod12.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+                
+                   <!-- Mod Card 13-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 13المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود الجوال</h3>
+                        <p class="text-gray-600 mb-4">مود الجوال يضيف ميزات وتحسينات خاصة لإصدار الهواتف، مثل واجهات مبسطة وأزرار تحكم إضافية.</p>
+                        <a href="pages/mod13.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                     <!-- Mod Card 14-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 14المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود الردستون</h3>
+                        <p class="text-gray-600 mb-4">مود الردستون يضيف أدوات ذكية لتسهيل البرمجة والتحكم، ويوسّع إمكانيات البناء التلقائي والتفاعل داخل اللعبة.</p>
+                        <a href="pages/mod14.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                        <!-- Mod Card 15-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 15المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مودباك ريل كرافت</h3>
+                        <p class="text-gray-600 mb-4">مودباك RLCraft يحوّل ماين كرافت إلى تجربة بقاء قاسية، بإضافة واقعية شديدة، وحوش خطيرة، ونظام عطش وحرارة يزيد التحدي.</p>
+                        <a href="pages/mod15.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                        <!-- Mod Card 16-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 16المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود القرويين الجديدين</h3>
+                        <p class="text-gray-600 mb-4">مود القرويين الجديدين يطوّر سلوك القرويين ويضيف وظائف مثل الحراسة، الزراعة، والتجارة، مما يجعلهم أكثر فاعلية وتفاعلاً داخل العالم.</p>
+                        <a href="pages/mod16.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                        <!-- Mod Card 17-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 17المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود التعويذات</h3>
+                        <p class="text-gray-600 mb-4">مود التعويذات يضيف قدرات سحرية مثل التجميد، الحرق، والشفاء، مما يمنح القتال طابعاً خيالياً ومتنوعاً.</p>
+                        <a href="pages/mod17.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                         <!-- Mod Card 18-->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 18المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود التخزين</h3>
+                        <p class="text-gray-600 mb-4">مود التخزين يضيف أنظمة ذكية لترتيب وحفظ الموارد، مما يسهل الوصول إليها ويقلل الفوضى.</p>
+                        <a href="pages/mod18.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                          <!-- Mod Card 19 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/الصورة 19المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود تنكر كونستراكت</h3>
+                        <p class="text-gray-600 mb-4">مود Tinkers’ Construct يضيف نظاماً متقدماً لصناعة الأدوات، يسمح بدمج مواد مختلفة لإنشاء معدات مخصصة بخصائص فريدة.</p>
+                        <a href="pages/mod19.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+
+                            <!-- Mod Card 20 -->
+                <div class="mod-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="./images/20المصغرة.jpg" alt="Mod Image" class="w-full h-48 object-cover">
+                    <div class="p-4 text-right">
+                        <h3 class="title text-xl font-semibold text-gray-800 mb-2">مود الفين ماينر</h3>
+                        <p class="text-gray-600 mb-4">مود VeinMiner يتيح كسر مجموعة كاملة من الكتل المتصلة بضغطة واحدة، مما يسرّع التعدين ويوفر الوقت والجهد.</p>
+                        <a href="pages/mod20.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300">المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mod Details Page (hidden by default, would be shown when navigating to a mod) -->
+        <div id="mod-details" class="hidden">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Biomes O' Plenty</h2>
+                    
+                    <!-- Main Image -->
+                    <div class="mb-6">
+                        <img src="https://via.placeholder.com/800x450" alt="Mod Main Image" class="w-full rounded-lg">
+                    </div>
+                    
+                    <!-- Gallery (if available) -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                        <img src="https://via.placeholder.com/200x150" alt="Mod Screenshot" class="rounded cursor-pointer hover:opacity-80 transition duration-300">
+                        <img src="https://via.placeholder.com/200x150" alt="Mod Screenshot" class="rounded cursor-pointer hover:opacity-80 transition duration-300">
+                        <img src="https://via.placeholder.com/200x150" alt="Mod Screenshot" class="rounded cursor-pointer hover:opacity-80 transition duration-300">
+                        <img src="https://via.placeholder.com/200x150" alt="Mod Screenshot" class="rounded cursor-pointer hover:opacity-80 transition duration-300">
+                    </div>
+                    
+                    <!-- Description -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Description</h3>
+                        <p class="text-gray-700 mb-4">
+                            Biomes O' Plenty is a mod that adds over 50 new biomes to Minecraft, ranging from lush forests to desolate wastelands. 
+                            Each biome has its own unique terrain, vegetation, and sometimes even mobs. The mod also adds new wood types, flowers, 
+                            and other decorative blocks to match the new biomes.
+                        </p>
+                        <p class="text-gray-700">
+                            The mod is highly configurable, allowing server owners to enable or disable specific biomes, adjust their spawn rates, 
+                            and even create custom biome combinations. It's compatible with most other biome-altering mods and works well with 
+                            world generation mods like Terrain Control.
+                        </p>
+                    </div>
+                    
+                    <!-- Download Button -->
+                    <div class="text-center mb-8">
+                        <button class="download-btn bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                            Download Mod (v4.1.0)
+                        </button>
+                    </div>
+                    
+                    <!-- Mod Info -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800 mb-2">Mod Info</h4>
+                            <ul class="text-gray-700">
+                                <li class="mb-1"><span class="font-medium">Author:</span> IlYasSe AH</li>
+                                <li class="mb-1"><span class="font-medium">Version:</span> 4.1.0</li>
+                                <li class="mb-1"><span class="font-medium">Minecraft:</span> 1.16.5</li>
+                                <li class="mb-1"><span class="font-medium">Downloads:</span> 2,450,321</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800 mb-2">Requirements</h4>
+                            <ul class="text-gray-700">
+                                <li class="mb-1">Forge 36.2.0 or later</li>
+                                <li class="mb-1">Minecraft 1.16.5</li>
+                                <li class="mb-1">4GB RAM recommended</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800 mb-2">Categories</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Biomes</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">World Gen</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Decoration</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Related Mods -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Related Mods</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition duration-300">
+                                <img src="https://via.placeholder.com/300x150" alt="Related Mod" class="w-full mb-2 rounded">
+                                <h4 class="font-medium text-gray-800">Traverse</h4>
+                                <p class="text-sm text-gray-600">A biome mod that adds realistic biomes</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition duration-300">
+                                <img src="https://via.placeholder.com/300x150" alt="Related Mod" class="w-full mb-2 rounded">
+                                <h4 class="font-medium text-gray-800">Oh The Biomes You'll Go</h4>
+                                <p class="text-sm text-gray-600">Adds many new biomes to explore</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition duration-300">
+                                <img src="https://via.placeholder.com/300x150" alt="Related Mod" class="w-full mb-2 rounded">
+                                <h4 class="font-medium text-gray-800">TerraForged</h4>
+                                <p class="text-sm text-gray-600">Advanced world generation mod</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition duration-300">
+                                <img src="https://via.placeholder.com/300x150" alt="Related Mod" class="w-full mb-2 rounded">
+                                <h4 class="font-medium text-gray-800">Nature's Compass</h4>
+                                <p class="text-sm text-gray-600">Find specific biomes easily</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <!-- Footer -->
+<footer id="footer" class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <h2 class="text-xl font-bold text-green-400 mb-2">MyCraftMods</h2>
+        <p class="text-gray-400">The best Minecraft mods collection</p> 
+         <p class="text-gray-400">v--BetaX</p>
+
+      </div>
+
+      <div class="flex space-x-6">
+        <a href="https://www.instagram.com/ahilyasse/" target="_blank" class="text-gray-400 hover:text-green-400 transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.youtube.com/@IlYasSe_Ah_GamEr_On_ToP" target="_blank" class="text-gray-400 hover:text-green-400 transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-6 text-center text-gray-500 text-sm">
+      © <span id="year"></span> IlYasSe_Ah. All rights reserved.
+    </div>
+  </div>
+</footer>
+              <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+                const input = document.getElementById("searchInput");
+                const cards = document.querySelectorAll(".mod-card");
+
+                input.addEventListener("keyup", () => {
+                  let value = input.value.toLowerCase();
+
+                  cards.forEach(card => {
+                    let title = card.querySelector(".title").textContent.toLowerCase();
+                    card.style.display = title.includes(value) ? "" : "none";
+                  });
+                });
+               const burgerBtn = document.getElementById("burgerBtn");
+  const mobileNav = document.getElementById("mobileNav");
+
+  burgerBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("translate-x-full");
+  });
+
+  // Optional: close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!mobileNav.contains(e.target) && !burgerBtn.contains(e.target)) {
+      if (!mobileNav.classList.contains("translate-x-full")) {
+        mobileNav.classList.add("translate-x-full");
+      }
+    }
+  });
+ </script>
+
+</body>
+</html>
