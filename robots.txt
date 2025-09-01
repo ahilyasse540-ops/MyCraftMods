@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahilyasse540-ops.github.io/MyCraftMods/sitemap.xml
